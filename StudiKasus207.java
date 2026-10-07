@@ -16,16 +16,18 @@ public class StudiKasus207 {
         if (jenisKegiatan.equalsIgnoreCase("BELMAWA")
                 || jenisKegiatan.equalsIgnoreCase("BAKORMA")
                 || jenisKegiatan.equalsIgnoreCase("MANDIRI")) {
-            if (peringkat >= 1 && peringkat <= 3) {
-                if (jumlahDokumen == 4) {
+            if (jumlahDokumen == 4) {
+                System.out.print("Peringkat juara: ");
+                peringkat = sc.nextInt();
+                if (peringkat >= 1 && peringkat <= 3) {
                     System.out.println("Status : Dokumen lengkap. Dana penghargaan diberikan.");
                 } else {
-                    System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen)
-                            + " dokumen). Dana penghargaan tidak diberikan.");
+                    System.out.print(
+                    "Status : Peringkat tidak memenuhi syarat (bukan juara 1, 2, atau 3). Dana penghargaan tidak diberikan.");
                 }
             } else {
-                System.out.println(
-                        "Status : Peringkat tidak memenuhi syarat (bukan juara 1, 2, atau 3). Dana penghargaan tidak diberikan.");
+                    System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen)
+                            + " dokumen). Dana penghargaan tidak diberikan.");
             }
         } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
             System.out.print("Status pendanaan PKM (angka 1 = lolos, 0 = tidak lolos): ");
