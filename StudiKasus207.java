@@ -15,7 +15,9 @@ public class StudiKasus207 {
         System.out.print("Peringkat juara (angka 1, 2, atau 3; isi 0 jika bukan juara): ");
         peringkat = sc.nextInt();
 
-        if (jenisKegiatan.equalsIgnoreCase("BELMAWA") || jenisKegiatan.equalsIgnoreCase("BAKORMA") || jenisKegiatan.equalsIgnoreCase("MANDIRI")) {
+        if (jenisKegiatan.equalsIgnoreCase("BELMAWA") 
+        || jenisKegiatan.equalsIgnoreCase("BAKORMA") 
+        || jenisKegiatan.equalsIgnoreCase("MANDIRI")) {
             if (peringkat >= 1 && peringkat <=3) {
                 if (jumlahDokumen == 4) {
                     System.out.println("Status : Dokumen lengkap. Dana penghargaan diberikan.");
@@ -32,7 +34,9 @@ public class StudiKasus207 {
                 if (jumlahDokumen == 4) {
                     System.out.println("Status : Dokumen lengkap. Dana penghargaan diberikan.");
                 } else {
-                    System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). Dana penghargaan tidak diberikan.");
+                    System.out.println(
+                        "Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). Dana penghargaan tidak diberikan."
+                    );
                 }
             } else {
                 System.out.println("Status : Tidak lolos pendanaan. Dana penghargaan tidak diberikan.");
