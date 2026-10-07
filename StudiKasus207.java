@@ -35,11 +35,10 @@ public class StudiKasus207 {
                     System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen) + " dokumen). Dana penghargaan tidak diberikan.");
                 }
             } else {
-                System.out.println("Status : Peringkat tidak memenuhi syarat (bukan juara 1, 2, atau 3). Dana penghargaan tidak diberikan.");
+                System.out.println("Status : Tidak lolos pendanaan. Dana penghargaan tidak diberikan.");
             }
-        } else {
-            System.out.println("Status : Tidak lolos pendanaan. Dana penghargaan tidak diberikan.");
-        } else {
+        } 
+        else {
             System.out.println("Status : Kegiatan tersebut tidak memperoleh dana penghargaan.");
         }
     }
