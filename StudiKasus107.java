@@ -13,6 +13,5 @@ public class StudiKasus107 {
         totalHarga = jumlahCup * hargaPerCup; 
         diskon = 0;
         totalHarga >= 100000 ? diskon = totalHarga * 10/100 : totalBayar = totalHarga - diskon;
-        
     }
 }
